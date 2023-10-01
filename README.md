@@ -86,4 +86,20 @@
 ### Disadvantages:
   - Can be resource-intensive and may slow down the performance of your system
   - If you lose your encryption key, **you will not be able to recover the data** on your storage device
-    
+
+### Conclusion:
+In summary, LUKS is a reliable and well-tested disk encryption specification that provides a high level of security for your data. It encrypts the entire block device and is well-suited for protecting the contents of mobile devices such as removable storage media or laptop disk drives. LUKS uses a header to store metadata for encryption setup, which provides a generic key store on the dedicated area on a disk, with the ability to use multiple passphrases to unlock a stored key. LUKS provides passphrase strengthening, which protects against dictionary attacks, and LUKS devices contain multiple key slots, which allows users to add backup keys or passphrases. However, LUKS is not well-suited for applications requiring many (more than eight) users to have distinct access keys to the same device, and it is not well-suited for applications requiring file-level encryption.
+Related
+What is the difference between LUKS and other disk encryption standards?
+How can I add backup keys or passphrases to a LUKS device?
+What are some best practices for using LUKS for disk encryption?
+
+### References:
+  - [Linux Unified Key Setup](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup)
+  - [Red Hat Enterprise Linux](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/security_hardening/encrypting-block-devices-using-luks_security-hardening)
+  - [Disk Encryption User Guide](https://docs.fedoraproject.org/en-US/quick-docs/encrypting-drives-using-LUKS/)
+  - [How To Use LUKS Utility in Linux For Disk Encryption](https://youtube.com/watch?v=nWQB-Wq8V8I)
+  - [How To Use Linux LUKS Full Disk Encryption For Internal / External / Boot Drives](https://youtube.com/watch?v=5rlZtasM-Pk&t=0)
+
+---
+*Project By Robin Rajesh & Rhea Yadav*
